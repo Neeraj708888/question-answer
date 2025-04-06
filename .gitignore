@@ -1,0 +1,15 @@
+# Ignore all node_modules
+**/node_modules
+
+# Ignore all environment variable files
+**/.env
+
+# Ignore frontend build output
+frontend/question/build
+
+# Optional: VS Code settings
+.vscode
+
+# Optional: system junk
+.DS_Store
+Thumbs.db
