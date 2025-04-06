@@ -7,9 +7,10 @@ const AddQuestions = () => {
     const [answer, setAnswer] = useState('');
 
     // let url = 'http://localhost:5000/api/questions';
+    const api = import.meta.env.VITE_API_URL;
     const handleSubmit = async (e)=> {
         e.preventDefault();
-        await axios.post(`${process.env.REACT_APP_URL}/api/questions`, {question, answer});
+        await axios.post(`${api}/api/questions`, {question, answer});
         setQuestion('');
         setAnswer('');
     }
