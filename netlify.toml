@@ -1,0 +1,7 @@
+[build]
+  base = "Frontend/questions"
+  publish = "dist"
+  command = "npm run build"
+
+[build.environment]
+  VITE_API_URL="https://question-answer-2s67.onrender.com"
