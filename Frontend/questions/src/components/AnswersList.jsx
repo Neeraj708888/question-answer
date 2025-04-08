@@ -21,7 +21,6 @@ const AnswersList = () => {
 
   return (
     <div>
-      <h2>All Questions</h2>
       <ul>
         {answerList.map((ans, index) => (
           <li key={index}>
